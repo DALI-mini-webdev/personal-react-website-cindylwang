@@ -5,9 +5,8 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-
                 <p>
-                    Hello World!<code>My name is</code>Cindy!
+                    Hello World!<code> My name is</code> Cindy!
                 </p>
                 <a
                     className="App-link"
