@@ -1,12 +1,10 @@
 import React from 'react';
-import './index.html';
 import './App.css';
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
                 <p>
                     Hello World!<code>My name is</code>Cindy!
                 </p>
@@ -22,3 +20,5 @@ function App() {
         </div>
     );
 }
+
+export default App;
