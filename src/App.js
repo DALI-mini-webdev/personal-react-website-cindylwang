@@ -8,7 +8,7 @@ function App() {
         <link rel="stylesheet" href='style.css'></link>
       </head>
       <body>
-          <h1 className="greeting">Hello World! :)</h1>
+          <h1 className="greeting">Hello World :)</h1>
           <h3> My name is Cindy!</h3>
 
           <p>I am from Fargo, North Dakota.</p>
@@ -21,6 +21,7 @@ function App() {
 
           <p>I am planning on majoring in computer science and economics.</p>
           <p>The classes I'm taking for this quarter are: </p>
+              
               <ul>
                   <li>ECON 1</li>
                   <li>PHYS 3</li>
