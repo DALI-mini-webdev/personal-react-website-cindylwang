@@ -9,15 +9,16 @@ function App() {
       </head>
       <body>
           <h1 className="greeting">Hello World! :)</h1>
+          <h3> My name is Cindy!</h3>
 
-          <p>My name is Cindy and I am from Fargo, North Dakota.</p>
+          <p>I am from Fargo, North Dakota.</p>
           <img src="Fargo.jpg" 
           widgth="500" height="250"></img>
 
           <p>This term, I'll be living with a few friends in NYC!</p>
           <img src="NYC.jpg"
           width="500" height="250"></img>
-          
+
           <p>I am planning on majoring in computer science and economics.</p>
           <p>The classes I'm taking for this quarter are: </p>
               <ul>
