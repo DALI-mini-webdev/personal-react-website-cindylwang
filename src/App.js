@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -9,12 +8,16 @@ function App() {
         <link rel="stylesheet" href='style.css'></link>
       </head>
       <body>
-          <h2>Hello World! :)</h2>
+          <h1 className="greeting">Hello World! :)</h1>
 
           <p>My name is Cindy and I am from Fargo, North Dakota.</p>
+          <img src="Fargo.jpg" 
+          widgth="500" height="250"></img>
 
           <p>This term, I'll be living with a few friends in NYC!</p>
-
+          <img src="NYC.jpg"
+          width="500" height="250"></img>
+          
           <p>I am planning on majoring in computer science and economics.</p>
           <p>The classes I'm taking for this quarter are: </p>
               <ul>
@@ -43,8 +46,10 @@ function App() {
                   <li>Paint</li>
               </ul>
 
-          <p>I am excited to be a part of this course, and I am looking forward 
+          <p>I am excited to be part of this course and I am looking forward 
               to learning more about web development!</p>
+
+        </body>
     </div>
   );
 }

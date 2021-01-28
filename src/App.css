@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.red-text{
+  color: red;
+}
+
+#blue-background{
+  background-color: #0000ff;
+}
+
+#green-background{
+  background-color: rbg(0, 255, 0);
+}
+
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
