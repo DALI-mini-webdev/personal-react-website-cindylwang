@@ -2,11 +2,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App" className = "App-header">
+    <div className = "App-header">
       <head>
         <title>Cindy Wang</title> 
       </head>
-      <body>
+      <body className="App">
           <h1 className="darkpurple-text">Hello World :)</h1>
 
           <p className="lilac-text"> My name is Cindy!</p>
@@ -18,14 +18,15 @@ function App() {
           <p className="lilac-text">This term, I'll be living with a few friends in NYC!</p>
           <img src="NYC.jpg"
           width="445" height="250"></img>
+      </body>
 
+      <p className="darkpurple-text">--------------------------------------------------------------------------------------------</p>
+      
+      <div className= "App-header">
           <p className="lilac-text">I am planning on majoring in computer science and economics.</p>
-          
-
-          
+  
           <p className="lilac-text">The classes I'm taking for this quarter are: </p>
-              
-              <ul>
+              <ul className="brown-text">
                   <li>ECON 1</li>
                   <li>PHYS 3</li>
                   <li>WRIT 5.26</li>
@@ -33,7 +34,7 @@ function App() {
               </ul>
               
           <p className="lilac-text">Some clubs that I've joined are:</p>
-              <ul>
+              <ul className="brown-text">
                   <li>Formula Racing</li>
                   <li>Dartmouth Outing Club (DOC)</li>
                   <li>Women in Computer Science (WiCS)</li>
@@ -41,7 +42,7 @@ function App() {
               </ul>
           
           <p className="lilac-text">In my free time, some things that I like to do are:</p>
-              <ul>
+              <ul className="brown-text">
                   <li>Go for a run or hike</li>
                   <li>Read or write</li>
                   <li>Watch movies and shows</li>
@@ -53,15 +54,10 @@ function App() {
 
           <p className="lilac-text">I am excited to be part of this course and I am looking forward 
               to learning more about web development!</p>
-
-        </body>
+    
     </div>
-  );
-
-
-
-
-
+    </div>
+    );
 }
 
 export default App;
