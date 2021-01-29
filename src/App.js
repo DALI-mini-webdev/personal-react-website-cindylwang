@@ -2,25 +2,28 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" className = "App-header">
       <head>
-        <title>Cindy Wang</title>
-        <link rel="stylesheet" href='style.css'></link>
+        <title>Cindy Wang</title> 
       </head>
       <body>
-          <h1 className="greeting">Hello World :)</h1>
-          <h3> My name is Cindy!</h3>
+          <h1 className="darkpurple-text">Hello World :)</h1>
 
-          <p>I am from Fargo, North Dakota.</p>
+          <p className="lilac-text"> My name is Cindy!</p>
+
+          <p className="lilac-text">I am from Fargo, North Dakota.</p>
           <img src="Fargo.jpg" 
           widgth="500" height="250"></img>
 
-          <p>This term, I'll be living with a few friends in NYC!</p>
+          <p className="lilac-text">This term, I'll be living with a few friends in NYC!</p>
           <img src="NYC.jpg"
-          width="500" height="250"></img>
+          width="445" height="250"></img>
 
-          <p>I am planning on majoring in computer science and economics.</p>
-          <p>The classes I'm taking for this quarter are: </p>
+          <p className="lilac-text">I am planning on majoring in computer science and economics.</p>
+          
+
+          
+          <p className="lilac-text">The classes I'm taking for this quarter are: </p>
               
               <ul>
                   <li>ECON 1</li>
@@ -29,7 +32,7 @@ function App() {
                   <li>WGSS 15</li>
               </ul>
               
-          <p>Some clubs that I've joined are:</p>
+          <p className="lilac-text">Some clubs that I've joined are:</p>
               <ul>
                   <li>Formula Racing</li>
                   <li>Dartmouth Outing Club (DOC)</li>
@@ -37,7 +40,7 @@ function App() {
                   <li>Dartmouth Undergraduate Journal of Science (DUJS)</li>
               </ul>
           
-          <p>In my free time, some things that I like to do are:</p>
+          <p className="lilac-text">In my free time, some things that I like to do are:</p>
               <ul>
                   <li>Go for a run or hike</li>
                   <li>Read or write</li>
@@ -48,12 +51,17 @@ function App() {
                   <li>Paint</li>
               </ul>
 
-          <p>I am excited to be part of this course and I am looking forward 
+          <p className="lilac-text">I am excited to be part of this course and I am looking forward 
               to learning more about web development!</p>
 
         </body>
     </div>
   );
+
+
+
+
+
 }
 
 export default App;
