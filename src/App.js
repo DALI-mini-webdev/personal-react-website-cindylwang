@@ -1,16 +1,24 @@
 import './App.css';
 
 function App() {
+  const name = "Cindy";
+  var nameComponent = (name === "Cindy")?
+  <h1 className="darkpurple-text"> My name is {name}!</h1> : <p> My name is not Cindy.</p>
+  const buttonFunction = () =>
+    console.log("The button was clicked.");
+  
   return (
     <div className = "App-header">
       <head>
         <title>Cindy Wang</title> 
       </head>
+
+      <header className = "App-header">
+        <div>{nameComponent}</div>
+        <button onClick={buttonFunction}>Click me!</button>
+      </header>
+
       <body className="App">
-          <h1 className="darkpurple-text">Hello World :)</h1>
-
-          <p className="lilac-text"> My name is Cindy!</p>
-
           <p className="lilac-text">I am from Fargo, North Dakota.</p>
           <img src="Fargo.jpg" 
           widgth="500" height="250"></img>
@@ -32,8 +40,8 @@ function App() {
                   <li>WRIT 5.26</li>
                   <li>WGSS 15</li>
               </ul>
-              
-          <p className="lilac-text">Some clubs that I've joined are:</p>
+
+          <p className="App" className="lilac-text">Some clubs that I've joined are:</p>
               <ul className="brown-text">
                   <li>Formula Racing</li>
                   <li>Dartmouth Outing Club (DOC)</li>
@@ -58,6 +66,6 @@ function App() {
     </div>
     </div>
     );
-}
+  }
 
 export default App;
