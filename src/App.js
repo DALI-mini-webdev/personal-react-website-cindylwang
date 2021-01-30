@@ -6,22 +6,34 @@ function App() {
   <h1 className="darkpurple-text"> My name is {name}!</h1> : <p> My name is not Cindy.</p>
   const buttonFunction = () =>
     console.log("The button was clicked.");
-    <button onClick="window.location='https://www.youtube.com/watch?v=rEq1Z0bjdwc';"></button>
+    <button onClick="window.open='https://www.youtube.com/watch?v=rEq1Z0bjdwc';"></button>
   
+  const onChangeFunction = (event) => {
+    console.log(event.target.value);
+  }
+
   return (
-    <div className="App">
+    <div className="App-header">
       <header className = "App-header">
         <div>{nameComponent}</div>
-        <button onClick={buttonFunction}>Click me!</button>
+        <button onClick={buttonFunction}>Click Me</button>
       </header>
 
-      <body className="App-header">
-          <p className="lilac-text">I am from Fargo, North Dakota.</p>
-          <img src="Fargo.jpg" widgth="500" height="250" alt="Fargo"></img>
+      <a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" className="App-header">
+        If the button doesn't take you to the link, click here instead!</a>
 
-          <p className="lilac-text">This term, I'll be living with a few friends in NYC!</p>
-          <img src="NYC.jpg" width="445" height="250" alt="NYC"></img>
-      </body>
+      <p className="App-header">What is your name?</p>
+
+      <header className="App-header">
+        <input type="text" onChange={onChangeFunction}/>
+      </header>
+
+      <p className="App-header">Nice to meet you!</p>
+
+      <p className="lilac-text">I am from Fargo, North Dakota.</p>
+      <img src="Fargo.jpg" widgth="500" height="250" alt="Fargo"></img>
+      <p className="lilac-text">This term, I'll be living with a few friends in NYC!</p>
+      <img src="NYC.jpg" width="445" height="250" alt="NYC"></img>
         
       <div className= "App-header">
           <p className="lilac-text">I am planning on majoring in computer science and economics.</p>

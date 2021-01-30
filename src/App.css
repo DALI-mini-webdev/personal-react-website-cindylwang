@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 0.55vmin);
-  color: white;
+  color: rgb(161, 124, 163);
 }
 
 .App-link {
@@ -22,11 +22,12 @@
 }
 
 .lilac-text{
+  background-color: #e7dde7;
   color: rgb(161, 124, 163);
 }
 
 .brown-text{
-  text-align: center;
+  text-align: left;
   color:rgb(151, 128, 128)
 }
 
