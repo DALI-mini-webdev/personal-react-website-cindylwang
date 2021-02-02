@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './components/Navbar/Navbar';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="App-header">
+      <Navbar />
       <header className = "App-header">
         <div>{nameComponent}</div>
         <button onClick={buttonFunction}>Click Me</button>
