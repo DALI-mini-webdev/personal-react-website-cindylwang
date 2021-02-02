@@ -9,7 +9,6 @@ function App() {
   const buttonFunction = () =>
     console.log("The button was clicked.");
     <button onClick="window.open='https://www.youtube.com/watch?v=rEq1Z0bjdwc';"></button>
-  
   const onChangeFunction = (event) => {
     console.log(event.target.value);
   }
