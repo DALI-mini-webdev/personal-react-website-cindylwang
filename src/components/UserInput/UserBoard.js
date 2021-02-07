@@ -6,10 +6,19 @@ class UserBoard extends Component {
         super(props);
         this.state = {
             Users: Map(),
-            UserID: 0
+            UserID: 0,
+            newUserName: '',
+            newUserImage: ''
         }
     }
+    newUserNameFunction = (event) => {
+        this.setState({newUserName: event.target.value});
+    }
 
+    newUserImage = (event) => {
+        this.setState({newUserImage: event.target.value});
+    }
+    
     render() {
         return (
             <div>
