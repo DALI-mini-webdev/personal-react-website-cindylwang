@@ -29,12 +29,27 @@ class UserBoard extends Component {
             UserID: this.state.userID + 1
         });
     }
+    delete = (id) => {
+        this.setState({Users: this.state.Users.delete(id)})
+    }
+    submit = () => {
+        var newName ={
+            name: this.state.newPost
+        }
+        this.props.save(this.props.id, newName);
+        this.setState({editing: false})
+    }
+    save = (id, field) => {
+        this.setState({Users: this.state.Users.update(id, (n) => {return Object.assign({}, n, field); })})
+    }
 
     render() {
         const allUsers = this.state.Users.entrySeq().map(
             ([id, user]) => {
                 return(
                     <UserPosting 
+                        save = {this.save}
+                        delete = {this.delete}
                         name = {user.name}
                         userURL = {user.image}
                         id = {id}
