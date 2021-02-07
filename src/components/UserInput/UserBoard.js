@@ -1,3 +1,6 @@
+// for some reason, my submit button that appears after the edit posting button
+// is clicked is not working?
+
 import React, {Component} from 'react';
 import {Map} from 'immutable';
 import UserPosting from './UserPosting'
