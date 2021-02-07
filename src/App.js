@@ -10,9 +10,6 @@ function App() {
   const buttonFunction = () =>
     console.log("The button was clicked.");
     <button onClick="window.open='https://www.youtube.com/watch?v=rEq1Z0bjdwc';"></button>
-  const onChangeFunction = (event) => {
-    console.log(event.target.value);
-  }
 
   return (
     <div className="App-header">
@@ -24,12 +21,9 @@ function App() {
 
       <a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" className="App-header">
         If the button doesn't take you to the link, click here instead!</a>
-
+      
+      <p className='App-header'>What is your name?</p>
       <UserBoard />
-
-      <header className="App-header">
-        <input type="text" onChange={onChangeFunction}/>
-      </header>
 
       <p className="App-header">Nice to meet you!</p>
 

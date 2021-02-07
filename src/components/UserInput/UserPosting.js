@@ -1,19 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class UserPosting extends Component {
-    constructor (props) {
-        super (props);
-        this.state = {};
-    }
-
-    render () {
-        return (
-            <div>
-                <p>{this.props.name} </p>
-                <img src={this.props.userURL} alt = 'Image'/>
-            </div>
-        )
-    }
+const UserPosting = (props) => {
+    return (
+        <div>
+            <p>{props.name}</p>
+            <img src={props.userURL} alt = 'Image'/>
+        </div>
+    );
 }
 
 export default UserPosting;
