@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
+import User from './components/UserInput/User';
 import './App.css';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
       <a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" className="App-header">
         If the button doesn't take you to the link, click here instead!</a>
 
-      <p className="App-header">What is your name?</p>
+      <User />
 
       <header className="App-header">
         <input type="text" onChange={onChangeFunction}/>
