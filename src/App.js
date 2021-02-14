@@ -1,9 +1,53 @@
 import React from 'react';
+import {Component} from 'react';
 import Navbar from './components/Navbar/Navbar';
 import UserBoard from './components/UserInput/UserBoard';
 import './App.css';
+import axios from 'axios';
 
-function App() {
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: null
+    }
+  }
+
+  fetchData = () => {
+    axios.get("https://poetrydb.org/random")
+    .then((response) => {
+      console.log(response);
+      this.setState({
+        data: response.data[0]
+      })
+    }).catch((error) => {
+      console.log(error);
+    })
+  }
+
+  renderPoem = () => {
+    if (this.state.data) {
+      return (
+        <div>
+          <div>Title: {this.state.data.title}</div>
+          <div>Author: {this.state.data.author}</div>
+          <div>
+            {
+              this.state.data.lines.map((line) => {
+                return(<div>{line}</div>);
+              })
+            }
+          </div>
+        </div>
+      )
+    } else {
+      return(<div>Apologies, no poem available.</div>);
+    }
+  
+  }
+  
+  render () {
+  console.log(this.state.data);
   const name = "Cindy";
   var nameComponent = (name === "Cindy")?
   <h1 className="darkpurple-text"> My name is {name}!</h1> : <p> My name is not Cindy.</p>
@@ -64,10 +108,15 @@ function App() {
 
           <p className="lilac-text">I am excited to be part of this course and I am looking 
           forward to learning more about web development!</p>
-    
+          
+      <div className="App=header">Here is my data to spice up your life!</div>
+      <button onClick={this.fetchData}>Click me for a poem!</button>
+      {this.renderPoem()}
+
     </div>
     </div>
     );
   }
+}
 
 export default App;
