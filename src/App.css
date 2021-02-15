@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: rgb(232, 222, 232);
+  min-height: 25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 0.55vmin);
+  color: rgb(161, 124, 163);
+}
+
+.darkpurple-text{
+  color: rgb(102, 64, 102)
+}
+
+.lilac-text{
+  background-color: #e7dde7;
+  color: rgb(161, 124, 163);
+}
+
+.brown-text{
+  text-align: left;
+  color:rgb(151, 128, 128)
+}
+
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 1;
+  padding: 1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
