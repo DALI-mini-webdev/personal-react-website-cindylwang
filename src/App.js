@@ -2,8 +2,10 @@ import React from 'react';
 import {Component} from 'react';
 import Navbar from './components/Navbar/Navbar';
 import UserBoard from './components/UserInput/UserBoard';
+import ToDoBoard from './components/ToDoBoard';
 import './App.css';
 import axios from 'axios';
+import firebase from './firestore/index';
 
 class App extends Component {
   constructor(props) {
@@ -45,7 +47,7 @@ class App extends Component {
     }
   
   }
-  
+
   render () {
   console.log(this.state.data);
   const name = "Cindy";
@@ -54,6 +56,9 @@ class App extends Component {
   const buttonFunction = () =>
     console.log("The button was clicked.");
     <button onClick="window.open='https://www.youtube.com/watch?v=rEq1Z0bjdwc';"></button>
+
+  console.log(firebase);
+  console.log(firebase.db);
 
   return (
     <div className="App-header">
@@ -106,13 +111,12 @@ class App extends Component {
                   <li>Paint</li>
               </ul>
 
-          <p className="lilac-text">I am excited to be part of this course and I am looking 
-          forward to learning more about web development!</p>
-          
+      <ToDoBoard />
+
       <div className="App=header">Here is my data to spice up your life!</div>
       <button onClick={this.fetchData}>Click me for a poem!</button>
       {this.renderPoem()}
-
+      
     </div>
     </div>
     );
